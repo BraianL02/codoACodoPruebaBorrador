@@ -1,0 +1,242 @@
+.contenedorBody {
+  display: grid;
+  gap: 5px;
+  background-color: lightgray;
+  grid-template-rows: 80px 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 8fr;
+  grid-template-areas:
+      'header header    '
+      'marg carousel'
+      'marg     main    '
+      'marg     main    '
+      'marg     main    '
+      'footer footer    '
+  ;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.contenedorBodyArt {
+  display: grid;
+  gap: 4px;
+  background-color: lightgray;
+  grid-template-rows: 1fr 6fr 6fr 1fr;
+  grid-template-columns: 6fr 1fr;
+  grid-template-areas:
+      'header header  '
+      'mainArt  marg  '
+      'mainArt  marg  '
+      'mainArt  marg  '
+      'footer footer  '
+  ;
+}
+
+.contenedorArticle{
+  display: grid;
+  gap:50px;
+  grid-template-columns:3fr 1fr ;
+  grid-template-rows:1fr;
+  grid-template-areas:
+      'texto img '
+  ;
+}
+
+.header {
+  grid-area: header;
+  height: 85px;
+  background-color: #333;
+  color: #fff;
+  padding-top: 5px;
+
+  
+  /* text-align: center; */
+}
+
+.margen {
+  grid-area: marg;
+  background-color:rgb(205, 205, 205);
+  /* text-align: center; */
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.main {
+  grid-area: main;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  margin-left: 50px
+}
+.mainArt {
+  grid-area: mainArt;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  /* margin-right: 50px */
+}
+.carrusel{
+  grid-area:carousel;
+}
+footer {
+  grid-area: footer;
+  background-color: #333;
+  color: #fff;
+  height: 30px;
+  display: flex;
+  text-align: center;
+  /* padding: 3rem; */
+  padding: 28px;
+  
+  justify-content: center;
+  font-size: 16px;
+}
+
+/* tablet */
+@media screen and (max-width: 1000px) {
+  .contenedorBody {
+    grid-template-rows: 120px 2fr 1fr 6fr 6fr 1fr;
+    grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          'header header    '
+          'carousel carousel'
+          'marg    marg     '
+          'main    main     '
+          'main    main     '
+          'footer footer    '
+      ;
+  }
+
+  .main {
+    grid-area: main;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5px;
+    margin-right: 20px;
+  }
+  .margen {
+    margin-bottom: 35px;
+    text-align: center;
+    padding-top:80px ;
+  }
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    height: 95px;
+    display: flex;
+    text-align: center;
+    /* padding: 3rem; */
+    padding: 28px;
+    
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+  
+
+@media screen and (max-width: 590px) {
+  .contenedorBody {
+    grid-template-rows: 1fr 6fr 6fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+      grid-template-areas:
+          'header header '
+          'main    main  '
+          'main    main  '
+          'marg    marg  '
+          'footer footer '
+      ;
+  }
+  .carrusel{
+    display:none;
+  }
+  .contenedorArticle{
+    display: grid;
+    gap:20px;
+    grid-template-columns:1fr;
+    grid-template-rows:1fr 1fr;
+    grid-template-areas:
+        'texto '
+        ' img  '
+    ;
+  }
+  footer {
+    grid-area: footer;
+    background-color: #333;
+    color: #fff;
+    height: 230px;
+    display: flex;
+    text-align: center;
+    /* padding: 3rem; */
+    padding: 28px;
+    
+    justify-content: center;
+    font-size: 16px;
+  }
+}
+h3>a{
+  text-decoration: none;
+  color: white;
+}
+h3>a:hover{
+  color: white;
+}
+h2>a{
+  text-decoration: none;
+  color: black;
+  font-weight:600;
+}
+h2>a:hover{
+  color: #b40000;
+}
+h1>a{
+  color: white;
+  text-decoration: none;
+  font-weight:600;
+}
+h1>a:hover{
+  color: rgb(168, 168, 168);
+}
+/* Estilos generales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos del encabezado */
+header h1 {
+  margin: 0;
+}
+
+/* Estilos de los artículos */
+article {
+  width: 100%;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color:rgb(198, 198, 198) ;
+}
+article h2 {
+  margin-top: 0;
+}
+article:hover {
+  background-color: rgb(187, 187, 187); /* cambia a un color más oscuro cuando el mouse pasa por encima */
+}
+
+
+.texto{
+  grid-area: texto;
+}
+.imagen{
+  grid-area: img;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+/* Estilos del pie de página */
+footer a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+} 
