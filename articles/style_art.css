@@ -136,12 +136,13 @@
 
      .contenedorArticle {
          display: grid;
-         gap: 20px;
+         gap: 5px;
          grid-template-columns: 1fr;
-         grid-template-rows: 1fr 1fr;
+         grid-template-rows: 70px 30% 1fr;
          grid-template-areas:
-             'texto '
+             'titulo '
              ' img  '
+             'texto'
          ;
      }
 
