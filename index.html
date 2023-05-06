@@ -5,73 +5,109 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título</title>
+    <title>CodoAcodoTec</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="script.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(65%);
+        }
+    </style>
 </head>
 
 <body class="contenedorBody">
-    <header class="header">
-        <h1><a href="index.html">Título</a></h1>
+    <header class="fixed">
+        <div class="header-content">
+            <div class="logo">
+                <h1><a href="index.html" class="t2_a"> CodoACodo <b> Tec </b></a></h1>
+            </div>
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <li class="menu-selected"><a class="text-menu-selected"
+                                style="text-decoration: none;">Inicio</a></li>
+                        <li><a href="#blog" style="text-decoration: none;">Blog</a></li>
+                        <li><a href="#" style="text-decoration: none;">Tutoriales</a></li>
+                        <li><a href="#" style="text-decoration: none;">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
     <div class="margen">
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis illum doloribus
-        assumenda ea quibusdam accusantium vitae earum maiores perferendis! Molestias quis earum distinctio
-        reiciendis, optio amet beatae sed quo facilis.</p>
-        
+            assumenda ea quibusdam accusantium vitae earum maiores perferendis! Molestias quis earum distinctio
+            reiciendis, optio amet beatae sed quo facilis.</p>
+
     </div>
     <div id="carouselExampleIndicators" class="carousel slide carrusel">
         <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="margin-left: -17%"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1" style="margin-left: -17%"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
         </div>
         <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="articles/art_carousel_1.html"><img src="img/cpu.jpg" class="d-block w-100" alt="cpu" style="width: 70% !important; margin-left: 8.7%;"></a>
+            <div class="carousel-item active">
+                <a href="articles/art_carousel_1.html"><img src="img/cpu.jpg" class="d-block w-100" alt="cpu"
+                        style="width: 70% !important; margin-left: 8.7%;"></a>
                 <div class="carousel-caption" style="margin-right: 12%;">
-                <h3><a href="articles/art_carousel_1.html">Cpu intel</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae magnam earum cum qui ab, sint minima dolor iusto vel sequi consequuntur expedita deleniti error? Deserunt, perferendis. Non, est. Reiciendis.</p>
-              </div> 
-          </div>
-          <div class="carousel-item">
-            <a href="articles/art_carousel_2.html"><img src="img/developer.jpg" class="d-block w-100" alt="developer"style="width:70% !important; margin-left: 8.7%;"></a>
-            <div class="carousel-caption" style="margin-right: 12%;">
-                <h3><a href="articles/art_carousel_2.html">Developer</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae magnam earum cum qui ab, sint minima dolor iusto vel sequi consequuntur expedita deleniti error? Deserunt, perferendis. Non, est. Reiciendis.</p>
-              </div> 
-          </div>
-          <div class="carousel-item">
-            <a href="articles/art_carousel_3.html"><img src="img/mother-cpu.jpg" class="d-block w-100" alt="mother" style="width:70% !important; margin-left: 8.7%;"></a>
-            <div class="carousel-caption" style="margin-right: 12%;">
-                <h3><a href="articles/art_carousel_3.html">Motherboard</a></h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, vitae magnam earum cum qui ab, sint minima dolor iusto vel sequi consequuntur expedita deleniti error? Deserunt, perferendis. Non, est. Reiciendis.</p>
-              </div> 
-          </div>
+                    <h2><a href="articles/art_carousel_1.html" class="t1_a hover2">AMD presenta su nueva línea de
+                            procesadores</a></h2>
+                    <p>La compañía de tecnología AMD ha lanzado al mercado su nueva línea de procesadores, que prometen
+                        ser más rápidos y eficientes que sus predecesores. Uno de los modelos más destacados es el que
+                        se muestra en la imagen, con un diseño renovado y mejoras en su capacidad de procesamiento.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="articles/art_carousel_2.html"><img src="img/developer.jpg" class="d-block w-100"
+                        alt="developer" style="width:70% !important; margin-left: 8.7%;"></a>
+                <div class="carousel-caption" style="margin-right: 12%;">
+                    <h2><a href="articles/art_carousel_2.html" class="t1_a hover2">Las ventajas de programar desde
+                            casa</a></h2>
+                    <p>En la actualidad, muchas personas están optando por trabajar desde casa, y la programación es una
+                        de las áreas en las que esta tendencia es especialmente fuerte. Programar desde la comodidad de
+                        tu habitación puede tener muchas ventajas.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="articles/art_carousel_3.html"><img src="img/mother-cpu.jpg" class="d-block w-100" alt="mother"
+                        style="width:70% !important; margin-left: 8.7%;"></a>
+                <div class="carousel-caption" style="margin-right: 12%;">
+                    <h2><a href="articles/art_carousel_3.html" class="t1_a hover2">Cómo instalar un procesador Ryzen en
+                            tu computadora</a></h2>
+                    <p>Si estás buscando mejorar el rendimiento de tu computadora, una de las mejores formas de hacerlo
+                        es actualizar el procesador. El Ryzen es una excelente opción para aquellos que buscan velocidad
+                        y eficiencia, y en esta imagen puedes ver cómo se instala en una motherboard.</p>
+                </div>
+            </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next" style="margin-right: 12.5%">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next" style="margin-right: 12.5%">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
         </button>
-      </div>
-    <main class="main">
+    </div>
+    <main class="main" id="blog">
         <article class="contenedorArticle">
             <div class="texto">
-                    <h2><a href="articles/article_1.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere aliquid libero sapiente,
-                        soluta
-                        at
-                        impedit</a></h2>
+                <h2><a href="articles/article_1.html" class="t2_a hover2">La importancia de la tecnología en el trabajo
+                        remoto</a></h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse malesuada fringilla mauris,
-                    vitae
-                    vulputate quam pharetra quis. Nulla eu felis vel nibh venenatis hendrerit. Praesent tincidunt, nunc
-                    a
-                    finibus dignissim, lectus justo pharetra velit, eu aliquam mi lacus nec velit.
-                </p>
+                    En la actualidad, el trabajo remoto se ha convertido en una opción cada vez más popular para muchas
+                    personas, y la tecnología juega un papel fundamental en esto.
+                    Una de las principales ventajas de la tecnología en el trabajo remoto es la capacidad de acceder a
+                    herramientas y recursos de trabajo en línea.
             </div>
 
             <div class="img">
@@ -80,18 +116,14 @@
 
         </article>
 
-        <article class="mouse_encima_article contenedorArticle">
+        <article class="contenedorArticle">
             <div class="texto">
-                <h2><a href="articles/article_2.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere aliquid libero sapiente,
-                    soluta
-                    at
-                    impedit</a></h2>
+                <h2><a href="articles/article_2.html" class="t2_a hover2">Cómo encontrar el equilibrio entre trabajo y
+                        descanso para los programadores</a></h2>
                 <p>
-                    Maecenas placerat ante nec sapien pulvinar fringilla. Duis vitae tellus nulla. Nunc ac orci
-                    tristique,
-                    commodo nisi a, eleifend odio. Proin eu ligula enim. Aenean commodo, quam vel venenatis viverra,
-                    orci
-                    sapien malesuada mauris, in blandit elit mi non elit.
+                    A menudo, los programadores se enfrentan a una carga de trabajo intensa que puede resultar en largas
+                    horas laborales y poco tiempo libre. Sin embargo, encontrar un equilibrio adecuado entre el trabajo
+                    y el descanso es esencial para mantener la productividad y evitar la fatiga mental y física.
                 </p>
             </div>
 
@@ -102,18 +134,16 @@
 
         </article>
 
-        <article class="mouse_encima_article contenedorArticle">
+        <article class="contenedorArticle">
             <div class="texto">
-                <h2><a href="articles/article_3.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere aliquid libero sapiente,
-                    soluta
-                    at
-                    impedit</a></h2>
+                <h2><a href="articles/article_3.html" class="t2_a hover2">Soldar componentes electrónicos en un
+                        chipset</a></h2>
                 <p>
-                    Donec rutrum, ex nec elementum finibus, tortor turpis sagittis nibh, in malesuada libero sapien non
-                    ante.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Suspendisse potenti.
-                    Vivamus id leo id felis faucibus elementum.
+                    Soldar componentes electrónicos en un chipset puede parecer una tarea desalentadora para muchos. Sin
+                    embargo, con las herramientas y
+                    técnicas adecuadas, es posible realizar esta tarea de manera efectiva y segura. Es importante
+                    asegurarse de que se tienen las herramientas adecuadas, incluyendo un soldador de estaño, soldadura,
+                    una esponja húmeda y pinzas.
                 </p>
             </div>
 
@@ -122,19 +152,14 @@
             </div>
 
         </article>
-        <article class="mouse_encima_article contenedorArticle">
+        <article class="contenedorArticle">
             <div class="texto">
-                <h2><a href="articles/article_4.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere aliquid libero sapiente,
-                    soluta
-                    at
-                    impedit</a></h2>
+                <h2><a href="articles/article_4.html" class="t2_a hover2">La importancia de elegir el teclado adecuado
+                        para programar</a></h2>
                 <p>
-                    Donec rutrum, ex nec elementum finibus, tortor turpis sagittis nibh, in malesuada libero sapien
-                    non
-                    ante.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Suspendisse potenti.
-                    Vivamus id leo id felis faucibus elementum.
+                    El teclado es una herramienta esencial para cualquier programador, ya que es la principal forma de
+                    ingresar código y comandos. Aunque pueda parecer un detalle menor, elegir el teclado adecuado puede
+                    marcar la diferencia en cuanto a la comodidad, la eficiencia y la precisión en el trabajo.
                 </p>
             </div>
 
@@ -143,19 +168,14 @@
             </div>
 
         </article>
-        <article class="mouse_encima_article contenedorArticle">
+        <article class="contenedorArticle">
             <div class="texto">
-                <h2><a href="articles/article_5.html">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde facere aliquid libero sapiente,
-                    soluta
-                    at
-                    impedit</a></h2>
+                <h2><a href="articles/article_5.html" class="t2_a hover2">El impacto de la inteligencia artificial en
+                        nuestras vidas</a></h2>
                 <p>
-                    Donec rutrum, ex nec elementum finibus, tortor turpis sagittis nibh, in malesuada libero sapien
-                    non
-                    ante.
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.
-                    Suspendisse potenti.
-                    Vivamus id leo id felis faucibus elementum.
+                    La inteligencia artificial ha sido una de las tecnologías más innovadoras de las últimas décadas.
+                    Desde los asistentes virtuales hasta los vehículos autónomos, la inteligencia artificial ha
+                    revolucionado la forma en que interactuamos con la tecnología y entre nosotros.
                 </p>
             </div>
 
@@ -168,7 +188,9 @@
     <footer>
         <a href="#Contacto">Contacto</a>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
